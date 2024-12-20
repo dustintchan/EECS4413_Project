@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+/* ==== General Styles ==== */
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ==== Main Checkout Container ==== */
+
+.main-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 55px;
+    margin-top: 60px;
+    padding: 30px;
+}
+
+/* ==== Styles Within Main Container ==== */
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-weight: bold;
+    color: #555;
+}
+
+.input-group input {
+    margin-top: 4px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-group input:focus {
+	/* Colour when input field is clicked on */
+    border-color: #3cbfab;
+    outline: none;
+}
+
+.input-group input.full-width {
+	/* Input text field takes up entire row */
+	width: 95%;
+}
+
+.input-group input.threeQuarter-width {
+	width: 35%;
+	margin-right: 10px;
+}
+
+.input-group input.half-width {
+	width: 20%;
+	margin-right: 10px;
+}
+
+.input-group input.quarter-width {
+	width: 15%;
+	margin-right: 10px;
+}
+
+
+/* Buttons Styling */
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Space out the buttons */
+    align-items: center; /* Vertically center the buttons */
+    margin-top: 30px; /* Add some space above the buttons */
+}
+
+.button-container button {
+	margin-top: 30px;
+    padding: 15px;
+    background-color: #3cbfab;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 150px;
+}
+
+.confirm-btn {
+    display: block;
+    margin-left: auto;
+}
+
+.submit-btn:hover {
+    background-color: #2f9384;
+}
+
+/* Popup Notification */
+
+.popup {
+    display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.7);
+	color: white;
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 18px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
