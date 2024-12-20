@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+/* ==== General Styles ==== */
+
+ body {
+   font-family: Arial, sans-serif;
+   background-color: #f9f9f9;
+ }
+ 
+ .container {
+   margin-top: 60px; /* To prevent content from being hidden under the fixed header */
+   flex: 1;
+   overflow-y: auto;
+   display: flex;
+   justify-content: space-between;
+   padding: 20px;
+ }
+   
+ /* ==== Subtotal section ==== */
+ 
+ .subtotal {
+   width: 300px;
+   padding: 20px;
+   background-color: white;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   border-radius: 8px;
+   max-height: 260px; /* Ensures height doesn't dynamically change */
+ }
+
+ .subtotal h3 {
+   margin-bottom: 20px;
+   font-size: 18px;
+ }
+
+ .subtotal div {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 10px;
+ }
+
+ .subtotal .total {
+   font-weight: bold;
+   font-size: 20px;
+   color: #333;
+ }
+
+ .checkout-button {
+   width: 100%;
+   padding: 10px;
+   background-color: #3cbfab;
+   color: white;
+   border: none;
+   font-size: 18px;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+   margin-top: 10px;
+ }
+ 
+  .checkout-button-disabled {
+   width: 100%;
+   padding: 10px;
+   background-color: #808080;
+   color: white;
+   border: none;
+   font-size: 18px;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+   margin-top: 10px;
+ }
+
+ .checkout-button:hover {
+   background-color: #2f9384;
+ }
+ 
+
+ /* ==== Cart section ==== */
+
+ .cart-items {
+   flex: 1;
+   margin-right: 20px;
+   padding: 20px;
+   background-color: white;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   border-radius: 8px;
+   overflow-y: auto;
+ }
+
+ .cart-items h2 {
+   margin-bottom: 20px;
+ }
+
+ .cart-item {
+   display: flex;
+   justify-content: space-between;
+   padding: 10px;
+   border-bottom: 1px solid #eee;
+ }
+
+/* Removes the <hr> extra line for last item on the list. */
+ .cart-item:last-child {
+   border-bottom: none;
+ }
+
+ .item-details {
+   display: flex;
+ }
+
+ .item-details img {
+   width: 75px;
+   height: 75px;
+   object-fit: cover;
+   margin-right: 15px;
+ }
+
+ .item-details div {
+   display: flex;
+   flex-direction: column;
+ }
+
+ .item-details .item-name {
+   font-weight: bold;
+ }
+
+ .item-details .item-price {
+   color: #777;
+ }
+
+ .item-quantity {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+ }
+
+ .item-quantity input {
+   width: 40px;
+   text-align: center;
+   padding: 5px;
+   margin-left: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+ }
+
+ 
