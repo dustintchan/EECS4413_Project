@@ -1,6 +1,6 @@
 # EECS4413_Project
 
-Deploying and Running the Application with Docker Instructions
+Deploying and Running the Application with Docker Instructions.
 
 -------------------------------------------
 Source Code Location:
@@ -11,8 +11,6 @@ Source Code Location:
 2) .war file contents found within /source_code
 
 
--------------------------------------------
-Instruction on Running the Project:
 -------------------------------------------
 
 ## Running the Project Locally with Docker
