@@ -1,26 +1,49 @@
 # EECS4413_Project
 
-EECS4413 <TeamName> Group Project Instructions
+Deploying and Running the Application with Docker Instructions
 
 -------------------------------------------
 Source Code Location:
 -------------------------------------------
 
-1) Submitted on eClass as a .war file. This is the preferred method of importing the project.
+1) Submitted on eClass as a .war file.
 
-2) Github link: https://github.com/dustintchan/EECS4413_Project
+2) .war file contents found within /source_code
 
 
 -------------------------------------------
 Instruction on Running the Project:
 -------------------------------------------
 
-- Please utilize "Eclipse IDE for Enterprise Java and Web Developers" to run the .war file   included in eclass. This is the same IDE used within the EECS4413 class.
+## Running the Project Locally with Docker
 
-- Project .war file should already include the following dependacies found in /src/main/webapp/WEB-  INF/lib:
-	* sqlite-jdbc-3.41.2.1.jar
-	* taglibs-standard-impl-1.2.5.jar
-	* taglibs-standard-spec-1.2.5.jar
+### Prerequisites
+1. **Docker Installed**: Ensure Docker is installed and running on your machine.
+   - [Download Docker](https://www.docker.com/products/docker-desktop)
+2. **WAR File**: Obtain the `4413-TeamName-GroupProject.war` file from e-class submission.
+3. **Dockerfile**: Ensure the `Dockerfile` is available in your project directory.
+
+### Steps to Build and Run the Docker Container
+
+1. **Navigate to the Project Directory**
+  terminal command:
+   cd /path/to/your/project
+ 
+
+2. **Build the Docker Image**
+   Build the Docker image using the Dockerfile:
+   terminal command:
+   docker build -t 4413-teamname-groupproject .
+  
+   
+3. **Run the Docker Container**
+   Run the container and map the application to port 8080 on your local machine:
+   terminal command:
+   docker run -d -p 8080:8080 4413-teamname-groupproject
+ 
+
+4. **Access the Application**
+   - Open your browser and navigate to: http://localhost:8080/4413-TeamName-GroupProject
 
 
 -------------------------------------------
