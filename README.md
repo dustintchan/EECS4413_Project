@@ -6,14 +6,14 @@ Deploying and Running the Application with Docker Instructions.
 Source Code Location:
 -------------------------------------------
 
-1) Submitted on eClass as a .war file.
+1) Project submitted on eClass as a .war file.
 
-2) .war file contents found within /source_code
+2) .war file contents found within EECS4413_Project/source_code
 
 
 -------------------------------------------
 
-## Running the Project Locally with Docker
+## Running the Project Locally with Docker:
 
 ### Prerequisites
 1. **Docker Installed**: Ensure Docker is installed and running on your machine.
@@ -21,7 +21,7 @@ Source Code Location:
 2. **WAR File**: Obtain the `4413-TeamName-GroupProject.war` file from e-class submission.
 3. **Dockerfile**: Ensure the `Dockerfile` is available in your project directory.
 
-### Steps to Build and Run the Docker Container
+### Steps to Build and Run the Docker Container:
 
 1. **Navigate to the Project Directory**
   terminal command:
