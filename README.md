@@ -1,6 +1,4 @@
-# EECS4413_Project
-
-Deploying and Running the Application with Docker Instructions.
+# Deploying and Running the Application with Docker
 
 -------------------------------------------
 Source Code Location:
